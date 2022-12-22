@@ -33,7 +33,4 @@ def get_recommendations(title, indices, cosine_sim, titles):
     sim_scores = list(enumerate(cosine_sim[idx]))
     sim_scores = sorted(sim_scores, key=lambda x: x[1], reverse=True)
     job_indices = [i[0] for i in sim_scores]
-    return titles.iloc[job_indices]
-
-
-print(get_recommendations('SAP Business Analyst / WM').head(10))
+    return (titles.iloc[job_indices]).head(10).to_json()
