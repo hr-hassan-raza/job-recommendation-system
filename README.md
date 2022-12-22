@@ -9,6 +9,8 @@
 
 **Install Flask and other libraries**
 - pip install Flask
+- pip install pandas
+- pip install scikit-learn
 
 **Start Server**
 - flask run
