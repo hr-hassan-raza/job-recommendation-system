@@ -6,11 +6,11 @@ imp.reload(module=model)
 app = Flask(__name__)
 
 print("Loading data set")
-jobs_US = model.load_dataset()
+jobs = model.load_dataset()
 print("Preprocessing data set")
-jobs_US_base_line = model.pre_process_dataset(jobs_US)
+jobs_base_line = model.pre_process_dataset(jobs)
 print("Training model")
-indices, cosine_sim, titles = model.train_model(jobs_US_base_line)
+indices, cosine_sim, titles = model.train_model(jobs_base_line)
 
 
 @app.route('/recommend_job', methods=['GET'])
