@@ -1,18 +1,36 @@
-# job-recommendation-system
+# Job Title Recommendation System
 
+This project is a recommendation system for job titles based on their skillsets. It uses a dataset of job titles and their corresponding skillsets to train a model that can recommend similar job titles based on a given input. The project is built using Python and the Flask web framework.
 
-**Create Python Environment**
- - python3 -m venv venv
+## Getting Started
 
-**Activate Environment**
- - . venv/bin/activate
+To get started with this project, follow these steps:
 
-**Install Flask and other libraries**
-- pip install Flask
-- pip install pandas
-- pip install scikit-learn
+1. Clone the repository to your local machine:
 
-**Start Server**
-- flask run
+   ```bash
+   git clone https://github.com/your-username/job-title-recommendation-system.git
+   ```
 
-***Server runs on http://127.0.0.1:5000***
+2. Install the required Python packages:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Run the Flask web application:
+
+   ```bash
+   python app.py
+   ```
+
+4. Open your web browser and navigate to `http://localhost:5000/recommend_job?title=your-job-title` to get recommendations for a specific job title.
+
+## Project Structure
+
+The project is structured as follows:
+
+- `app.py`: The main Flask application that serves the recommendation API.
+- `model.py`: Contains functions for loading the dataset, preprocessing the data, training the model, and getting recommendations.
+- `requirements.txt`: A list of Python packages required for the project.
+- `dataset/jobs.csv`: The dataset of job titles and their skillsets.
