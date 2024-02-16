@@ -12,13 +12,7 @@ To get started with this project, follow these steps:
    git clone https://github.com/your-username/job-title-recommendation-system.git
    ```
 
-2. Install the required Python packages:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Run the Flask web application:
+2. Run the Flask web application:
 
    ```bash
    python app.py
@@ -32,5 +26,4 @@ The project is structured as follows:
 
 - `app.py`: The main Flask application that serves the recommendation API.
 - `model.py`: Contains functions for loading the dataset, preprocessing the data, training the model, and getting recommendations.
-- `requirements.txt`: A list of Python packages required for the project.
 - `dataset/jobs.csv`: The dataset of job titles and their skillsets.
